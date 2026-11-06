@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Грант CRM — CRM для подготовки к ЕНТ</title>
+  <meta name="description" content="Демо CRM для онлайн-школы подготовки к ЕНТ: заявки, ученики, пробные ЕНТ, прогноз шанса на грант, оплаты Kaspi, рассылки на русском и казахском.">
+  <meta name="theme-color" content="#2a78d6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a78d6'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='12' fill='white' text-anchor='middle'%3E140%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip" href="#view">К содержимому</a>
+  <div class="shell">
+    <aside class="side" id="side" aria-label="Навигация">
+      <div class="brand"><span class="logo-mark" aria-hidden="true">140</span><div><b>Грант CRM</b><small id="tagline"></small></div></div>
+      <nav id="nav"></nav>
+      <div class="side-foot">
+        <a id="formLink" class="side-link" href="#/form" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span></span></a>
+        <label class="role"><span id="roleLbl"></span><select id="roleSel" aria-label="Роль"></select></label>
+        <div class="me"><span class="av lg" id="meAv"></span><div><b id="meName"></b><small id="demoNote"></small></div></div>
+      </div>
+    </aside>
+    <div class="nav-back" id="navBack"></div>
+    <div class="main">
+      <header class="top">
+        <button class="icon-btn burger" id="burger" aria-label="Меню"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <h1 id="pageTitle"></h1>
+        <button class="searchbox" id="searchBtn"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span></span><kbd>Ctrl K</kbd></button>
+        <div class="top-r">
+          <div class="langsw" id="langSw" role="group" aria-label="Язык"><button data-lang="ru">RU</button><button data-lang="kz">KZ</button></div>
+          <button class="icon-btn" id="themeBtn" aria-label="Тема"></button>
+          <button class="btn primary" id="addLeadBtn"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span></span></button>
+        </div>
+      </header>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="public"></div>
+  <div id="drawer"></div>
+  <div id="modal"></div>
+  <div id="toasts" aria-live="polite"></div>
+  <div id="tip" role="tooltip"></div>
+  <noscript><p style="padding:24px">Для работы CRM включите JavaScript.</p></noscript>
+
+  <script src="js/core.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/leads.js"></script>
+  <script src="js/students.js"></script>
+  <script src="js/ops.js"></script>
+  <script src="js/comms.js"></script>
+  <script>App.init();</script>
+</body>
+</html>
